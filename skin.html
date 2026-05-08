@@ -24,6 +24,9 @@
             <a href="[##_taglog_link_##]">Tags</a>
             <a href="[##_guestbook_link_##]">Guestbook</a>
           </nav>
+          <button class="theme-toggle" type="button" aria-label="테마 전환" title="테마 전환">
+            <span class="theme-toggle-icon" aria-hidden="true"></span>
+          </button>
         </div>
       </header>
 
@@ -44,14 +47,14 @@
               <s_index_article_rep>
                 <article class="post-list-item">
                   <a class="post-link" href="[##_article_rep_link_##]">
-                    <time datetime="[##_article_rep_simple_date_##]">[##_article_rep_simple_date_##]</time>
+                    <s_article_rep_thumbnail>
+                      <span class="post-thumb">
+                        <img src="[##_article_rep_thumbnail_url_##]" alt="">
+                      </span>
+                    </s_article_rep_thumbnail>
                     <span class="post-link-main">
-                      <s_article_rep_thumbnail>
-                        <span class="post-thumb">
-                          <img src="[##_article_rep_thumbnail_url_##]" alt="">
-                        </span>
-                      </s_article_rep_thumbnail>
                       <span class="post-link-title">[##_article_rep_title_##]</span>
+                      <time datetime="[##_article_rep_simple_date_##]">[##_article_rep_simple_date_##]</time>
                     </span>
                   </a>
                 </article>
@@ -100,9 +103,9 @@
 
               <s_article_protected>
                 <a class="post-link protected-index-link" href="[##_article_rep_link_##]">
-                  <time datetime="[##_article_rep_simple_date_##]">[##_article_rep_simple_date_##]</time>
                   <span class="post-link-main">
                     <span class="post-link-title">[##_article_rep_title_##] <em>protected</em></span>
+                    <time datetime="[##_article_rep_simple_date_##]">[##_article_rep_simple_date_##]</time>
                   </span>
                 </a>
 
