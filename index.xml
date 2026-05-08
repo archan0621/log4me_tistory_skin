@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+  <information>
+    <name><![CDATA[Log4Me Tistory]]></name>
+    <version>0.1.0</version>
+    <description><![CDATA[Archan's Log4Me를 티스토리에서 사용할 수 있도록 옮긴 미니멀 다크 스킨입니다.]]></description>
+    <license><![CDATA[Private use. 원본 log4me 스타일을 기반으로 개인 블로그 적용을 위해 제작되었습니다.]]></license>
+  </information>
+
+  <author>
+    <name><![CDATA[Archan]]></name>
+    <homepage><![CDATA[https://www.tistory.com]]></homepage>
+    <email><![CDATA[]]></email>
+  </author>
+
+  <default>
+    <recentEntries>5</recentEntries>
+    <recentComments>5</recentComments>
+    <itemsOnGuestbook>10</itemsOnGuestbook>
+    <tagsInCloud>30</tagsInCloud>
+    <sortInCloud>3</sortInCloud>
+    <expandComment>1</expandComment>
+    <entriesOnPage>10</entriesOnPage>
+    <entriesOnList>10</entriesOnList>
+    <showListOnCategory>1</showListOnCategory>
+    <showListLock>0</showListLock>
+    <contentWidth>680</contentWidth>
+    <liststyle>log</liststyle>
+  </default>
+
+  <variables>
+    <variablegroup name="Log4Me">
+      <variable>
+        <name>index-title</name>
+        <label><![CDATA[목록 제목]]></label>
+        <description><![CDATA[홈 화면 글 목록 위에 표시되는 제목입니다.]]></description>
+        <type>STRING</type>
+        <option />
+        <default><![CDATA[Posts]]></default>
+      </variable>
+      <variable>
+        <name>blog-subtitle</name>
+        <label><![CDATA[블로그 설명]]></label>
+        <description><![CDATA[상단 제목 아래에 작게 표시되는 설명입니다.]]></description>
+        <type>STRING</type>
+        <option />
+        <default><![CDATA[생각을 천천히 적어두는 개인 블로그]]></default>
+      </variable>
+      <variable>
+        <name>accent-color</name>
+        <label><![CDATA[강조 색상]]></label>
+        <description><![CDATA[링크 hover와 포커스 색상입니다.]]></description>
+        <type>COLOR</type>
+        <option />
+        <default><![CDATA[#64a8ff]]></default>
+      </variable>
+    </variablegroup>
+  </variables>
+
+  <liststyle>
+    <item>
+      <label><![CDATA[Log list]]></label>
+      <value>log</value>
+    </item>
+  </liststyle>
+</skin>

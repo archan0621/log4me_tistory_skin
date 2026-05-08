@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>[##_page_title_##] - [##_title_##]</title>
+    <meta name="description" content="[##_var_blog-subtitle_##]">
+    <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      :root {
+        --accent: [##_var_accent-color_##];
+      }
+    </style>
+  </head>
+
+  <body id="[##_body_id_##]">
+    <s_t3>
+      <header class="site-header">
+        <div class="wrapper header-inner">
+          <a class="site-title" href="[##_blog_link_##]">[##_title_##]</a>
+          <nav class="site-nav" aria-label="주요 메뉴">
+            <a href="[##_blog_link_##]">Posts</a>
+            <a href="[##_taglog_link_##]">Tags</a>
+            <a href="[##_guestbook_link_##]">Guestbook</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="page-content">
+        <div class="wrapper">
+          <section class="home index-only">
+            <h1 class="post-list-heading home-heading">[##_var_index-title_##]</h1>
+
+            <s_list>
+              <header class="list-header">
+                <p class="list-description">[##_list_description_##]</p>
+              </header>
+            </s_list>
+          </section>
+
+          <section class="entries">
+            <s_article_rep>
+              <s_index_article_rep>
+                <article class="post-list-item">
+                  <a class="post-link" href="[##_article_rep_link_##]">
+                    <time datetime="[##_article_rep_simple_date_##]">[##_article_rep_simple_date_##]</time>
+                    <span class="post-link-main">
+                      <s_article_rep_thumbnail>
+                        <span class="post-thumb">
+                          <img src="[##_article_rep_thumbnail_url_##]" alt="">
+                        </span>
+                      </s_article_rep_thumbnail>
+                      <span class="post-link-title">[##_article_rep_title_##]</span>
+                    </span>
+                  </a>
+                </article>
+              </s_index_article_rep>
+
+              <s_permalink_article_rep>
+                <article class="post">
+                  <header class="post-header">
+                    <p class="eyebrow">note / [##_article_rep_simple_date_##]</p>
+                    <h1 class="post-title">[##_article_rep_title_##]</h1>
+                  </header>
+
+                  <div class="post-content">
+                    [##_article_rep_desc_##]
+                  </div>
+
+                  <s_tag_label>
+                    <div class="post-tags">
+                      <span>tags</span>
+                      [##_tag_label_rep_##]
+                    </div>
+                  </s_tag_label>
+
+                  <nav class="post-neighbors" aria-label="이전 글과 다음 글">
+                    <s_article_prev>
+                      <a href="[##_article_prev_link_##]">
+                        <span>previous</span>
+                        [##_article_prev_title_##]
+                      </a>
+                    </s_article_prev>
+                    <s_article_next>
+                      <a href="[##_article_next_link_##]">
+                        <span>next</span>
+                        [##_article_next_title_##]
+                      </a>
+                    </s_article_next>
+                  </nav>
+
+                  <p class="back-link"><a href="[##_blog_link_##]">index로 돌아가기</a></p>
+
+                  <section class="comments">
+                    [##_comment_group_##]
+                  </section>
+                </article>
+              </s_permalink_article_rep>
+
+              <s_article_protected>
+                <a class="post-link protected-index-link" href="[##_article_rep_link_##]">
+                  <time datetime="[##_article_rep_simple_date_##]">[##_article_rep_simple_date_##]</time>
+                  <span class="post-link-main">
+                    <span class="post-link-title">[##_article_rep_title_##] <em>protected</em></span>
+                  </span>
+                </a>
+
+                <article class="post protected-post">
+                  <header class="post-header">
+                    <p class="eyebrow">locked / [##_article_rep_simple_date_##]</p>
+                    <h1 class="post-title">[##_article_rep_title_##]</h1>
+                  </header>
+
+                  <div class="protected-box">
+                    <p>보호되어 있는 글입니다. 내용을 보려면 비밀번호를 입력해 주세요.</p>
+                    <label for="[##_article_password_##]">Password</label>
+                    <div class="protected-form">
+                      <input
+                        id="[##_article_password_##]"
+                        name="[##_article_password_##]"
+                        type="password"
+                        maxlength="16"
+                        onkeydown="if (event.keyCode == 13) [##_article_dissolve_##]"
+                      >
+                      <button type="button" onclick="[##_article_dissolve_##]">Open</button>
+                    </div>
+                  </div>
+
+                  <p class="back-link"><a href="[##_blog_link_##]">index로 돌아가기</a></p>
+                </article>
+              </s_article_protected>
+            </s_article_rep>
+          </section>
+
+          <s_paging>
+            <nav class="paging" aria-label="페이지 이동">
+              <a [##_prev_page_##] class="page-prev [##_no_more_prev_##]">PREV</a>
+              <span class="page-numbers">
+                <s_paging_rep>
+                  <a [##_paging_rep_link_##] class="page-number">[##_paging_rep_link_num_##]</a>
+                </s_paging_rep>
+              </span>
+              <a [##_next_page_##] class="page-next [##_no_more_next_##]">NEXT</a>
+            </nav>
+          </s_paging>
+
+          <s_page_rep>
+            <article class="post">
+              <header class="post-header">
+                <p class="eyebrow">page / [##_article_rep_simple_date_##]</p>
+                <h1 class="post-title">[##_article_rep_title_##]</h1>
+              </header>
+              <div class="post-content">
+                [##_article_rep_desc_##]
+              </div>
+            </article>
+          </s_page_rep>
+
+          <s_notice_rep>
+            <article class="post">
+              <header class="post-header">
+                <p class="eyebrow">notice / [##_notice_rep_simple_date_##]</p>
+                <h1 class="post-title">[##_notice_rep_title_##]</h1>
+              </header>
+              <div class="post-content">
+                [##_notice_rep_desc_##]
+              </div>
+            </article>
+          </s_notice_rep>
+
+          <s_tag>
+            <section class="utility-page taglog">
+              <p class="eyebrow">tags</p>
+              <h1 class="post-list-heading">Tags</h1>
+              <ul class="tag-cloud">
+                <s_tag_rep>
+                  <li>
+                    <a href="[##_tag_link_##]" class="[##_tag_class_##]">[##_tag_name_##]</a>
+                  </li>
+                </s_tag_rep>
+              </ul>
+            </section>
+          </s_tag>
+
+          <s_guest>
+            <section class="utility-page guestbook">
+              <p class="eyebrow">guestbook</p>
+              <h1 class="post-list-heading">Guestbook</h1>
+              [##_guestbook_group_##]
+            </section>
+          </s_guest>
+        </div>
+      </main>
+
+      <footer class="site-footer"></footer>
+      <script src="./images/script.js"></script>
+    </s_t3>
+  </body>
+</html>
